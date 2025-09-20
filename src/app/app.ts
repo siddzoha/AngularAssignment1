@@ -1,15 +1,15 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { NgFor } from '@angular/common';
-import { HeaderComponent } from './header/header';
-import { FooterComponent } from './footer/footer';
+import {Header} from './header/header';
+import {Footer} from './footer/footer';
+import {NgFor} from '@angular/common';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.html',
   styleUrls: ['./app.css'],
   standalone: true,
-  imports: [NgFor, HeaderComponent, FooterComponent]
+  imports: [NgFor, Header, Footer]
 })
 export class App {
   cards: string[] = [
