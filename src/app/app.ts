@@ -30,9 +30,11 @@ export class App {
   }
 
   shuffleCards() {
-    for ( let i = this.cards.length - 1; i > 0; i--) {
+    const newCards = [...this.cards];
+    for (let i = newCards.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      [this.cards[i], this.cards[j]] = [this.cards[i], this.cards[j]];
+      [newCards[i], newCards[j]] = [newCards[j], newCards[i]];
     }
+    this.cards = newCards;
   }
 }
