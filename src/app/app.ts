@@ -13,7 +13,12 @@ import {NgFor} from '@angular/common';
 })
 export class App {
   cards: string[] = [
-    'card_2.png', 'card_3.png','card_4.png','card_5.png','card_6.png',
+    'card_2.png',
+    'card_3.png',
+    'card_4.png',
+    'card_5.png',
+    'card_6.png',
+    'card_7.png',
   ];
 
   sortCards() {
