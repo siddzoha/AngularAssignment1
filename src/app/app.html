@@ -1,7 +1,7 @@
 <app-header></app-header>
 
 <div class="cards-row">
-  <img *ngFor="let card of cards"
+  <img *ngFor="let card of cards; trackBy: trackByCard"
        [src]="'/' + card"
        class="card">
 </div>

@@ -20,13 +20,17 @@ export class App {
     'card_6.png',
     'card_7.png',
   ];
+  trackByCard(index: number, card: string):string {
+    return card;
+  }
 
   sortCards() {
     this.cards.sort();
   }
 
   reverseCards() {
-    this.cards.reverse();
+    this.sortCards()
+    this.cards = this.cards.slice().reverse();
   }
 
   shuffleCards() {
